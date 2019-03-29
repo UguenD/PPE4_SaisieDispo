@@ -48,6 +48,7 @@
 							<div>Dimanche</div>
 						</div>
 						<div class="calendar__week">
+							<!-- Affiche la date du jour de la case sur laquelle on double-click -->
 							<div class="calendar__day day" ondblclick="window.alert('<?php echo $listeJours[0]->format('d/m/Y') ?>');"></div>
 							<div class="calendar__day day" ondblclick="window.alert('<?php echo $listeJours[1]->format('d/m/Y') ?>');"></div>
 							<div class="calendar__day day" ondblclick="window.alert('<?php echo $listeJours[2]->format('d/m/Y') ?>');"></div>

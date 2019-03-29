@@ -6,6 +6,7 @@ $date = new DateTime();
 
 // Modifie la variable $date pour lui affecter la date du lundi suivant
 $lundi = $date->modify('next monday');
+//Ajoute dans l'array $listeJours le jour $lundi
 array_push($listeJours, $lundi);
 
 $mardi = new DateTime($lundi->format('Y/m/d'));
