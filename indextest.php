@@ -60,7 +60,7 @@
 						</div>
 					</div>
 					
-                    <table data-role="table" id="movie-table" data-mode="reflow" class="ui-responsive">
+                    <table data-role="table" id="" data-mode="reflow" class="ui-responsive">
                       <thead id="the">
                         <tr>
                           <th data-priority="0">Heure</th> 
@@ -76,7 +76,7 @@
                       </thead>
                       <tbody>
                         <tr>
-                          <th>00:00 / 01:00</th>
+                          <th>00:01 / 03:00</th>
                           <td ><input type="checkbox" name="dispo0" value="dispo0"></input></td>
                           <td ><input type="checkbox" name="dispo1" value="dispo1"></input></td>
                           <td ><input type="checkbox" name="dispo2" value="dispo2"></input></td>
@@ -87,245 +87,85 @@
                                                                                                                                                                                 
                         </tr>
                         <tr>
-                          <th>01:00 / 02:00</th>
-                          <td ondblclick="window.alert('<?php echo $listeJours[0]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[1]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[2]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[3]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[4]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[5]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[6]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                    
-                        </tr>
-                        <tr>
-                          <th>02:00 / 03:00</th>
-                          <td ondblclick="window.alert('<?php echo $listeJours[0]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[1]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[2]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[3]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[4]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[5]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[6]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                    
-                        </tr>
-                        <tr>
-                          <th>03:00 / 04:00</th>
-                          <td ondblclick="window.alert('<?php echo $listeJours[0]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[1]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[2]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[3]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[4]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[5]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[6]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                    
-                        </tr>
-                        <tr>
-                          <th>04:00 / 05:00</th>
-                          <td ondblclick="window.alert('<?php echo $listeJours[0]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[1]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[2]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[3]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[4]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[5]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[6]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                        </tr>
-                        
-                        <tr>
-                          <th>05:00 / 06:00</th>
-                          <td ondblclick="window.alert('<?php echo $listeJours[0]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[1]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[2]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[3]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[4]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[5]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[6]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                    
-                        </tr>
-                        <tr>
-                          <th>06:00 / 07:00</th>
-                          <td ondblclick="window.alert('<?php echo $listeJours[0]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[1]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[2]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[3]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[4]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[5]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[6]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                    
-                        </tr>
-                        <tr>
-                          <th>07:00 / 08:00</th>
-                          <td ondblclick="window.alert('<?php echo $listeJours[0]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[1]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[2]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[3]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[4]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[5]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[6]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                    
-                        </tr>
-                        <tr>
-                          <th>08:00 / 09:00</th>
-                          <td ondblclick="window.alert('<?php echo $listeJours[0]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[1]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[2]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[3]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[4]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[5]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[6]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                        </tr>
-                        <tr>
-                          <th>09:00 / 10:00</th>
-                          <td ondblclick="window.alert('<?php echo $listeJours[0]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[1]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[2]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[3]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[4]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[5]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ondblclick="window.alert('<?php echo $listeJours[6]->format('d/m/Y') ?>');"><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          </tr>
-                          
-                        <tr>
-                          <th>10:00 / 11:00</th>
+                          <th>03:01 / 06:00</th>
                           <td ><input type="checkbox" name="dispo0" value="dispo0"></input></td>
                           <td ><input type="checkbox" name="dispo1" value="dispo1"></input></td>
                           <td ><input type="checkbox" name="dispo2" value="dispo2"></input></td>
                           <td ><input type="checkbox" name="dispo3" value="dispo3"></input></td>
                           <td ><input type="checkbox" name="dispo4" value="dispo4"></input></td>
                           <td ><input type="checkbox" name="dispo5" value="dispo5"></input></td>
-                          <td ><input type="checkbox" name="dispo6" value="dispo6"></input></td>                                                                                                                                                   
-                        </tr>
-                        
+                          <td ><input type="checkbox" name="dispo6" value="dispo6"></input></td>
+                                                                                                                                                                                
+                        </tr>                        
                         <tr>
-                          <th>10:00 / 11:00</th>
+                          <th>06:01 / 09:00</th>
                           <td ><input type="checkbox" name="dispo0" value="dispo0"></input></td>
                           <td ><input type="checkbox" name="dispo1" value="dispo1"></input></td>
                           <td ><input type="checkbox" name="dispo2" value="dispo2"></input></td>
                           <td ><input type="checkbox" name="dispo3" value="dispo3"></input></td>
                           <td ><input type="checkbox" name="dispo4" value="dispo4"></input></td>
                           <td ><input type="checkbox" name="dispo5" value="dispo5"></input></td>
-                          <td ><input type="checkbox" name="dispo6" value="dispo6"></input></td>                                                                                                                                                   
-                        </tr>
+                          <td ><input type="checkbox" name="dispo6" value="dispo6"></input></td>
+                                                                                                                                                                                
+                        </tr>                        
                         <tr>
-                          <th>10:00 / 11:00</th>
+                          <th>09:01 / 12:00</th>
                           <td ><input type="checkbox" name="dispo0" value="dispo0"></input></td>
                           <td ><input type="checkbox" name="dispo1" value="dispo1"></input></td>
                           <td ><input type="checkbox" name="dispo2" value="dispo2"></input></td>
                           <td ><input type="checkbox" name="dispo3" value="dispo3"></input></td>
                           <td ><input type="checkbox" name="dispo4" value="dispo4"></input></td>
                           <td ><input type="checkbox" name="dispo5" value="dispo5"></input></td>
-                          <td ><input type="checkbox" name="dispo6" value="dispo6"></input></td>                                                                                                                                                   
-                        </tr>
-                        
+                          <td ><input type="checkbox" name="dispo6" value="dispo6"></input></td>
+                                                                                                                                                                                
+                        </tr>                        
                         <tr>
-                          <th>10:00 / 11:00</th>
+                          <th>12:01 / 15:00</th>
                           <td ><input type="checkbox" name="dispo0" value="dispo0"></input></td>
                           <td ><input type="checkbox" name="dispo1" value="dispo1"></input></td>
                           <td ><input type="checkbox" name="dispo2" value="dispo2"></input></td>
                           <td ><input type="checkbox" name="dispo3" value="dispo3"></input></td>
                           <td ><input type="checkbox" name="dispo4" value="dispo4"></input></td>
                           <td ><input type="checkbox" name="dispo5" value="dispo5"></input></td>
-                          <td ><input type="checkbox" name="dispo6" value="dispo6"></input></td>                                                                                                                                                   
-                        </tr>
-                        
+                          <td ><input type="checkbox" name="dispo6" value="dispo6"></input></td>
+                                                                                                                                                                                
+                        </tr>                        
                         <tr>
-                          <th>10:00 / 11:00</th>
+                          <th>15:01 / 18:00</th>
                           <td ><input type="checkbox" name="dispo0" value="dispo0"></input></td>
                           <td ><input type="checkbox" name="dispo1" value="dispo1"></input></td>
                           <td ><input type="checkbox" name="dispo2" value="dispo2"></input></td>
                           <td ><input type="checkbox" name="dispo3" value="dispo3"></input></td>
                           <td ><input type="checkbox" name="dispo4" value="dispo4"></input></td>
                           <td ><input type="checkbox" name="dispo5" value="dispo5"></input></td>
-                          <td ><input type="checkbox" name="dispo6" value="dispo6"></input></td>                                                                                                                                                   
-                        </tr>
-                        
+                          <td ><input type="checkbox" name="dispo6" value="dispo6"></input></td>
+                                                                                                                                                                                
+                        </tr>                        
                         <tr>
-                          <th>10:00 / 11:00</th>
-                          <td><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td><input type="checkbox" name="dispo1" value="dispo1"></input></td>
-                          <td><input type="checkbox" name="dispo2" value="dispo2"></input></td>
-                          <td><input type="checkbox" name="dispo3" value="dispo3"></input></td>
-                          <td><input type="checkbox" name="dispo4" value="dispo4"></input></td>
-                          <td><input type="checkbox" name="dispo5" value="dispo5"></input></td>
-                          <td><input type="checkbox" name="dispo6" value="dispo6"></input></td>                                                                                                                                                   
-                        </tr>                                                                                                                        
+                          <th>18:01 / 21:00</th>
+                          <td ><input type="checkbox" name="dispo0" value="dispo0"></input></td>
+                          <td ><input type="checkbox" name="dispo1" value="dispo1"></input></td>
+                          <td ><input type="checkbox" name="dispo2" value="dispo2"></input></td>
+                          <td ><input type="checkbox" name="dispo3" value="dispo3"></input></td>
+                          <td ><input type="checkbox" name="dispo4" value="dispo4"></input></td>
+                          <td ><input type="checkbox" name="dispo5" value="dispo5"></input></td>
+                          <td ><input type="checkbox" name="dispo6" value="dispo6"></input></td>
+                                                                                                                                                                                
+                        </tr>                        
+                        <tr>
+                          <th>21:01 / 00:00</th>
+                          <td ><input type="checkbox" name="dispo0" value="dispo0"></input></td>
+                          <td ><input type="checkbox" name="dispo1" value="dispo1"></input></td>
+                          <td ><input type="checkbox" name="dispo2" value="dispo2"></input></td>
+                          <td ><input type="checkbox" name="dispo3" value="dispo3"></input></td>
+                          <td ><input type="checkbox" name="dispo4" value="dispo4"></input></td>
+                          <td ><input type="checkbox" name="dispo5" value="dispo5"></input></td>
+                          <td ><input type="checkbox" name="dispo6" value="dispo6"></input></td>
+                                                                                                                                                                                
+                        </tr>
+                                                                                                                                           
                       </tbody>
-                    </table>					
-
-					
-
-<!-- <table data-role="table" id="movie-table" data-mode="reflow" class="ui-responsive"> -->
-<!--   <thead> -->
-<!--     <tr> -->
-<!--       <th data-priority="1">Heure</th> -->
-<!--       <th data-priority="persist">Disponibilit&eacute;</th> -->
-<!--       <th data-priority="2">Year</th> -->
-<!-- <!--       <th data-priority="3"><abbr title="Rotten Tomato Rating">Rating</abbr></th> --> 
-<!-- <!--       <th data-priority="4">Reviews</th> -->
-<!--     </tr> -->
-<!--   </thead> -->
-<!--   <tbody> -->
-<!--     <tr> -->
-<!--       <th>00:00 / 01:00</th> -->
-<!--       <td><input type="checkbox" name="Cheese" value="Cheese"></input></td> -->
-<!--       <td>1941</td> -->
-
-<!--     </tr> -->
-<!--     <tr> -->
-<!--       <th>01:00 / 02:00</th> -->
-<!--       <td><a href="http://en.wikipedia.org/wiki/Casablanca_(film)" data-rel="external">Casablanca</a></td> -->
-<!--       <td>1942</td> -->
-
-<!--     </tr> -->
-<!--     <tr> -->
-<!--       <th>02:00 / 03:00</th> -->
-<!--       <td><a href="http://en.wikipedia.org/wiki/The_Godfather" data-rel="external">The Godfather</a></td> -->
-<!--       <td>1972</td> -->
-
-<!--     </tr> -->
-<!--     <tr> -->
-<!--       <th>03:00 / 04:00</th> -->
-<!--       <td><a href="http://en.wikipedia.org/wiki/Gone_with_the_Wind_(film)" data-rel="external">Gone with the Wind</a></td> -->
-<!--       <td>1939</td> -->
-
-<!--     </tr> -->
-<!--     <tr> -->
-<!--       <th>04:00 / 05:00</th> -->
-<!--       <td><a href="http://en.wikipedia.org/wiki/Lawrence_of_Arabia_(film)" data-rel="external">Lawrence of Arabia</a></td> -->
-<!--       <td>1962</td> -->
-
-<!--     </tr> -->
-<!--     <tr> -->
-<!--       <th>6</th> -->
-<!--       <td><a href="http://en.wikipedia.org/wiki/Dr._Strangelove" data-rel="external">Dr. Strangelove Or How I Learned to Stop Worrying and Love the Bomb</a></td> -->
-<!--       <td>1964</td> -->
-
-<!--     </tr> -->
-<!--     <tr> -->
-<!--       <th>7</th> -->
-<!--       <td><a href="http://en.wikipedia.org/wiki/The_Graduate" data-rel="external">The Graduate</a></td> -->
-<!--       <td>1967</td> -->
-
-<!--     </tr> -->
-<!--     <tr> -->
-<!--       <th>8</th> -->
-<!--       <td><a href="http://en.wikipedia.org/wiki/The_Wizard_of_Oz_(1939_film)" data-rel="external">The Wizard of Oz</a></td> -->
-<!--       <td>1939</td> -->
-
-<!--     </tr> -->
-<!--     <tr> -->
-<!--       <th>9</th> -->
-<!--       <td><a href="http://en.wikipedia.org/wiki/Singin%27_in_the_Rain" data-rel="external">Singin' in the Rain</a></td> -->
-<!--       <td>1952</td> -->
-
-<!--     </tr> -->
-<!--     <tr> -->
-<!--       <th>10</th> -->
-<!--       <td class="title"><a href="http://en.wikipedia.org/wiki/Inception" data-rel="external">Inception</a></td> -->
-<!--       <td>2010</td> -->
-<!--     </tr> -->
-<!--   </tbody> -->
-<!-- </table> -->
-					
+                    </table>										
 				</main>
 
 		<div data-role="footer" data-position="fixed">
