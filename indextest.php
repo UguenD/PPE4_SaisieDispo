@@ -37,29 +37,7 @@
 
 					</div>
 					<br/>
-					<div class="calendar">
-						<div class="calendar__header">
-							<div>Lundi</div>
-							<div>Mardi</div>
-							<div>Mercredi</div>
-							<div>Jeudi</div>
-							<div>Vendredi</div>
-							<div>Samedi</div>
-							<div>Dimanche</div>
-						</div>
-						<div class="calendar__week">
-							<div class="calendar__day day" ondblclick="window.alert('<?php echo $listeJours[0]->format('d/m/Y') ?>');">
-    							<p><input type="checkbox" name="dispo0" value="dispo0" text="00:00 / 01:00"></input> </p>
-							</div>
-							<div class="calendar__day day" ondblclick="window.alert('<?php echo $listeJours[1]->format('d/m/Y') ?>');"></div>
-							<div class="calendar__day day" ondblclick="window.alert('<?php echo $listeJours[2]->format('d/m/Y') ?>');"></div>
-							<div class="calendar__day day" ondblclick="window.alert('<?php echo $listeJours[3]->format('d/m/Y') ?>');"></div>
-							<div class="calendar__day day" ondblclick="window.alert('<?php echo $listeJours[4]->format('d/m/Y') ?>');"></div>
-							<div class="calendar__day day" ondblclick="window.alert('<?php echo $listeJours[5]->format('d/m/Y') ?>');"></div>
-							<div class="calendar__day day" ondblclick="window.alert('<?php echo $listeJours[6]->format('d/m/Y') ?>');"></div>						
-						</div>
-					</div>
-					
+				
                     <table data-role="table" id="" data-mode="reflow" class="ui-responsive">
                       <thead id="the">
                         <tr>
