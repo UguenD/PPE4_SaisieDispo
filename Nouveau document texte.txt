@@ -1,0 +1,77 @@
+<tr>
+                          <th>03:01 / 06:00</th>
+                          <td ><input type="checkbox" name="lundi" value="dispo0"></input></td>
+                          <td ><input type="checkbox" name="lundi" value="dispo1"></input></td>
+                          <td ><input type="checkbox" name="lundi" value="dispo2"></input></td>
+                          <td ><input type="checkbox" name="lundi" value="dispo3"></input></td>
+                          <td ><input type="checkbox" name="lundi" value="dispo4"></input></td>
+                          <td ><input type="checkbox" name="lundi" value="dispo5"></input></td>
+                          <td ><input type="checkbox" name="lundi" value="dispo6"></input></td>
+                                                                                                                                                                                
+                        </tr>                        
+                        <tr>
+                          <th>06:01 / 09:00</th>
+                          <td ><input type="checkbox" name="lundi" value="dispo0"></input></td>
+                          <td ><input type="checkbox" name="lundi" value="dispo1"></input></td>
+                          <td ><input type="checkbox" name="lundi" value="dispo2"></input></td>
+                          <td ><input type="checkbox" name="lundi" value="dispo3"></input></td>
+                          <td ><input type="checkbox" name="lundi" value="dispo4"></input></td>
+                          <td ><input type="checkbox" name="lundi" value="dispo5"></input></td>
+                          <td ><input type="checkbox" name="lundi" value="dispo6"></input></td>
+                                                                                                                                                                                
+                        </tr>                        
+                        <tr>
+                          <th>09:01 / 12:00</th>
+                          <td ><input type="checkbox" name="lundi" value="dispo0"></input></td>
+                          <td ><input type="checkbox" name="lundi" value="dispo1"></input></td>
+                          <td ><input type="checkbox" name="lundi" value="dispo2"></input></td>
+                          <td ><input type="checkbox" name="lundi" value="dispo3"></input></td>
+                          <td ><input type="checkbox" name="lundi" value="dispo4"></input></td>
+                          <td ><input type="checkbox" name="lundi" value="dispo5"></input></td>
+                          <td ><input type="checkbox" name="lundi" value="dispo6"></input></td>
+                                                                                                                                                                                
+                        </tr>                        
+                        <tr>
+                          <th>12:01 / 15:00</th>
+                          <td ><input type="checkbox" name="dispo0" value="dispo0"></input></td>
+                          <td ><input type="checkbox" name="dispo1" value="dispo1"></input></td>
+                          <td ><input type="checkbox" name="dispo2" value="dispo2"></input></td>
+                          <td ><input type="checkbox" name="dispo3" value="dispo3"></input></td>
+                          <td ><input type="checkbox" name="dispo4" value="dispo4"></input></td>
+                          <td ><input type="checkbox" name="dispo5" value="dispo5"></input></td>
+                          <td ><input type="checkbox" name="dispo6" value="dispo6"></input></td>
+                                                                                                                                                                                
+                        </tr>                        
+                        <tr>
+                          <th>15:01 / 18:00</th>
+                          <td ><input type="checkbox" name="dispo0" value="dispo0"></input></td>
+                          <td ><input type="checkbox" name="dispo1" value="dispo1"></input></td>
+                          <td ><input type="checkbox" name="dispo2" value="dispo2"></input></td>
+                          <td ><input type="checkbox" name="dispo3" value="dispo3"></input></td>
+                          <td ><input type="checkbox" name="dispo4" value="dispo4"></input></td>
+                          <td ><input type="checkbox" name="dispo5" value="dispo5"></input></td>
+                          <td ><input type="checkbox" name="dispo6" value="dispo6"></input></td>
+                                                                                                                                                                                
+                        </tr>                        
+                        <tr>
+                          <th>18:01 / 21:00</th>
+                          <td ><input type="checkbox" name="dispo0" value="dispo0"></input></td>
+                          <td ><input type="checkbox" name="dispo1" value="dispo1"></input></td>
+                          <td ><input type="checkbox" name="dispo2" value="dispo2"></input></td>
+                          <td ><input type="checkbox" name="dispo3" value="dispo3"></input></td>
+                          <td ><input type="checkbox" name="dispo4" value="dispo4"></input></td>
+                          <td ><input type="checkbox" name="dispo5" value="dispo5"></input></td>
+                          <td ><input type="checkbox" name="dispo6" value="dispo6"></input></td>
+                                                                                                                                                                                
+                        </tr>                        
+                        <tr>
+                          <th>21:01 / 00:00</th>
+                          <td ><input type="checkbox" name="dispo0" value="dispo0"></input></td>
+                          <td ><input type="checkbox" name="dispo1" value="dispo1"></input></td>
+                          <td ><input type="checkbox" name="dispo2" value="dispo2"></input></td>
+                          <td ><input type="checkbox" name="dispo3" value="dispo3"></input></td>
+                          <td ><input type="checkbox" name="dispo4" value="dispo4"></input></td>
+                          <td ><input type="checkbox" name="dispo5" value="dispo5"></input></td>
+                          <td ><input type="checkbox" name="dispo6" value="dispo6"></input></td>
+                                                                                                                                                                                
+                        </tr>

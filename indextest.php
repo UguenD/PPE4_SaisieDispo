@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+lundiYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -37,7 +37,7 @@
 
 					</div>
 					<br/>
-				
+          <form id="formulaire" action="recap.php" method="get" >
                     <table data-role="table" id="" data-mode="reflow" class="ui-responsive">
                       <thead id="the">
                         <tr>
@@ -53,97 +53,94 @@
                         </tr>
                       </thead>
                       <tbody>
+
+                      <?php 
+
+                        $i =0;
+
+                        while($i<7):
+
+                          switch ($i) {
+                            case 0:
+                                $heure = "00:01 / 03:00";
+                                $dispo = "0";
+                                break;
+                            case 1:
+                                $heure = "03:01 / 06:00";
+                                $dispo = "1";
+                                break;
+                            case 2:
+                                $heure = "06:01 / 09:00";
+                                $dispo = "2";
+                                break;
+                            case 3:
+                                $heure = "09:01 / 12:00";
+                                $dispo = "3";
+                                break;
+                            case 4:
+                                $heure = "12:01 / 15:00";
+                                $dispo = "4";
+                                break;
+                            case 5:
+                                $heure = "15:01 / 18:00";
+                                $dispo = "5";
+                                break;
+                            case 6:
+                                $heure = "18:01 / 21:00";
+                                $dispo = "6";
+                                break;
+
+                            case 7:
+                                $heure = "21:01 / 00:00";
+                                $dispo = "7";
+                                break;
+                        }
+
+                      ?>
+
                         <tr>
-                          <th>00:01 / 03:00</th>
-                          <td ><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ><input type="checkbox" name="dispo1" value="dispo1"></input></td>
-                          <td ><input type="checkbox" name="dispo2" value="dispo2"></input></td>
-                          <td ><input type="checkbox" name="dispo3" value="dispo3"></input></td>
-                          <td ><input type="checkbox" name="dispo4" value="dispo4"></input></td>
-                          <td ><input type="checkbox" name="dispo5" value="dispo5"></input></td>
-                          <td ><input type="checkbox" name="dispo6" value="dispo6"></input></td>
-                                                                                                                                                                                
+                          <th> <?php echo $heure; ?> </th>
+                          <td>
+                            <input type="checkbox" name="lundi" value="<?php echo $dispo; ?>"></input>
+                          </td>
+                          <td >
+                            <input type="checkbox" name="mardi" value="<?php echo $dispo ?>"></input>
+                          </td>
+                          <td>
+                            <input type="checkbox" name="mercredi" value="<?php echo $dispo ?>"></input>
+                          </td>
+                          <td>
+                            <input type="checkbox" name="jeudi" value="<?php echo $dispo ?>"></input>
+                          </td>
+                          <td>
+                            <input type="checkbox" name="vendredi" value="<?php echo $dispo ?>"></input>
+                          </td>
+                          <td>
+                            <input type="checkbox" name="samedi" value="<?php echo $dispo ?>"></input>
+                          </td>
+                          <td>
+                            <input type="checkbox" name="dimanche" value="<?php echo $dispo ?>"></input>
+                          </td>
                         </tr>
-                        <tr>
-                          <th>03:01 / 06:00</th>
-                          <td ><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ><input type="checkbox" name="dispo1" value="dispo1"></input></td>
-                          <td ><input type="checkbox" name="dispo2" value="dispo2"></input></td>
-                          <td ><input type="checkbox" name="dispo3" value="dispo3"></input></td>
-                          <td ><input type="checkbox" name="dispo4" value="dispo4"></input></td>
-                          <td ><input type="checkbox" name="dispo5" value="dispo5"></input></td>
-                          <td ><input type="checkbox" name="dispo6" value="dispo6"></input></td>
-                                                                                                                                                                                
-                        </tr>                        
-                        <tr>
-                          <th>06:01 / 09:00</th>
-                          <td ><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ><input type="checkbox" name="dispo1" value="dispo1"></input></td>
-                          <td ><input type="checkbox" name="dispo2" value="dispo2"></input></td>
-                          <td ><input type="checkbox" name="dispo3" value="dispo3"></input></td>
-                          <td ><input type="checkbox" name="dispo4" value="dispo4"></input></td>
-                          <td ><input type="checkbox" name="dispo5" value="dispo5"></input></td>
-                          <td ><input type="checkbox" name="dispo6" value="dispo6"></input></td>
-                                                                                                                                                                                
-                        </tr>                        
-                        <tr>
-                          <th>09:01 / 12:00</th>
-                          <td ><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ><input type="checkbox" name="dispo1" value="dispo1"></input></td>
-                          <td ><input type="checkbox" name="dispo2" value="dispo2"></input></td>
-                          <td ><input type="checkbox" name="dispo3" value="dispo3"></input></td>
-                          <td ><input type="checkbox" name="dispo4" value="dispo4"></input></td>
-                          <td ><input type="checkbox" name="dispo5" value="dispo5"></input></td>
-                          <td ><input type="checkbox" name="dispo6" value="dispo6"></input></td>
-                                                                                                                                                                                
-                        </tr>                        
-                        <tr>
-                          <th>12:01 / 15:00</th>
-                          <td ><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ><input type="checkbox" name="dispo1" value="dispo1"></input></td>
-                          <td ><input type="checkbox" name="dispo2" value="dispo2"></input></td>
-                          <td ><input type="checkbox" name="dispo3" value="dispo3"></input></td>
-                          <td ><input type="checkbox" name="dispo4" value="dispo4"></input></td>
-                          <td ><input type="checkbox" name="dispo5" value="dispo5"></input></td>
-                          <td ><input type="checkbox" name="dispo6" value="dispo6"></input></td>
-                                                                                                                                                                                
-                        </tr>                        
-                        <tr>
-                          <th>15:01 / 18:00</th>
-                          <td ><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ><input type="checkbox" name="dispo1" value="dispo1"></input></td>
-                          <td ><input type="checkbox" name="dispo2" value="dispo2"></input></td>
-                          <td ><input type="checkbox" name="dispo3" value="dispo3"></input></td>
-                          <td ><input type="checkbox" name="dispo4" value="dispo4"></input></td>
-                          <td ><input type="checkbox" name="dispo5" value="dispo5"></input></td>
-                          <td ><input type="checkbox" name="dispo6" value="dispo6"></input></td>
-                                                                                                                                                                                
-                        </tr>                        
-                        <tr>
-                          <th>18:01 / 21:00</th>
-                          <td ><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ><input type="checkbox" name="dispo1" value="dispo1"></input></td>
-                          <td ><input type="checkbox" name="dispo2" value="dispo2"></input></td>
-                          <td ><input type="checkbox" name="dispo3" value="dispo3"></input></td>
-                          <td ><input type="checkbox" name="dispo4" value="dispo4"></input></td>
-                          <td ><input type="checkbox" name="dispo5" value="dispo5"></input></td>
-                          <td ><input type="checkbox" name="dispo6" value="dispo6"></input></td>
-                                                                                                                                                                                
-                        </tr>                        
-                        <tr>
-                          <th>21:01 / 00:00</th>
-                          <td ><input type="checkbox" name="dispo0" value="dispo0"></input></td>
-                          <td ><input type="checkbox" name="dispo1" value="dispo1"></input></td>
-                          <td ><input type="checkbox" name="dispo2" value="dispo2"></input></td>
-                          <td ><input type="checkbox" name="dispo3" value="dispo3"></input></td>
-                          <td ><input type="checkbox" name="dispo4" value="dispo4"></input></td>
-                          <td ><input type="checkbox" name="dispo5" value="dispo5"></input></td>
-                          <td ><input type="checkbox" name="dispo6" value="dispo6"></input></td>
-                                                                                                                                                                                
-                        </tr>
-                                                                                                                                           
+
+
+                      <?php
+                          $i++;
+                        endwhile
+
+                      ?>
+
                       </tbody>
-                    </table>										
+                    </table>	
+                      <?php
+                        if (isset($_GET['message']))
+                          echo $_GET['message'];
+                        else
+                          echo "&nbsp;";
+                      ?>
+                  <input id="envoyer" name="envoi" type="submit" title="" />
+
+            </form>		
 				</main>
 
 		<div data-role="footer" data-position="fixed">
@@ -154,8 +151,6 @@
 
     </div>
    </div>
-   
-   
    
 </body>
 
