@@ -96,30 +96,35 @@ lundiYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xh
                                 break;
                         }
 
+                        $checked = null;
+                        if($i == 1){
+                          $checked = "checked";
+                        }
+
                       ?>
 
                         <tr>
                           <th> <?php echo $heure; ?> </th>
                           <td>
-                            <input type="checkbox" name="lundi" value="<?php echo $dispo; ?>"></input>
+                            <input type="checkbox" name="lundi[]" id="lundi[]" value="<?php echo $dispo; ?>" <?php echo $checked; ?> ></input>
                           </td>
                           <td >
-                            <input type="checkbox" name="mardi" value="<?php echo $dispo ?>"></input>
+                            <input type="checkbox" name="mardi[]" id="mardi[]" value="<?php echo $dispo ?>" <?php echo $checked; ?>></input>
                           </td>
                           <td>
-                            <input type="checkbox" name="mercredi" value="<?php echo $dispo ?>"></input>
+                            <input type="checkbox" name="mercredi[]" id="mercredi[]" value="<?php echo $dispo ?>" <?php echo $checked; ?>></input>
                           </td>
                           <td>
-                            <input type="checkbox" name="jeudi" value="<?php echo $dispo ?>"></input>
+                            <input type="checkbox" name="jeudi[]" id="jeudi[]" value="<?php echo $dispo ?>" <?php echo $checked; ?>></input>
                           </td>
                           <td>
-                            <input type="checkbox" name="vendredi" value="<?php echo $dispo ?>"></input>
+                            <input type="checkbox" name="vendredi[]" id="vendredi[]" value="<?php echo $dispo ?>" <?php echo $checked; ?>></input>
                           </td>
                           <td>
-                            <input type="checkbox" name="samedi" value="<?php echo $dispo ?>"></input>
+                            <input type="checkbox" name="samedi[]"  id="samedi[]" value="<?php echo $dispo ?>" <?php echo $checked; ?>></input>
                           </td>
                           <td>
-                            <input type="checkbox" name="dimanche" value="<?php echo $dispo ?>"></input>
+                            <input type="checkbox" name="dimanche[]" id="dimanche[]" value="<?php echo $dispo ?>" <?php echo $checked; ?>></input>
                           </td>
                         </tr>
 
