@@ -38,7 +38,7 @@ lundiYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xh
 					</div>
 					<br/>
           <form id="formulaire" action="recap.php" method="get" >
-                    <table data-role="table" id="" data-mode="reflow" class="ui-responsive">
+                    <table data-role="table" id="tab" data-mode="reflow" class="ui-responsive">
                       <thead id="the">
                         <tr>
                           <th data-priority="0">Heure</th> 
@@ -97,9 +97,9 @@ lundiYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xh
                         }
 
                         $checked = null;
-                        if($i == 1){
-                          $checked = "checked";
-                        }
+                        // if($i == 1){
+                        //   $checked = "checked";
+                        // }
 
                       ?>
 

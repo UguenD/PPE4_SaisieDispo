@@ -1,16 +1,24 @@
 <?php 
+
+include 'connectAD.php';
+
     // $dispo=$_GET['heure'];
 
     $i = 0;
 var_dump($_GET);
 
-echo "<br />";
+echo "<hr/>";
 
-var_dump($_GET["lundi"]);
+// var_dump($_GET["lundi"]);
+// echo "<hr/>";
+// var_dump($_GET["mardi"]);
 
 
 echo "<br />";
 $jour = $_GET["lundi"];
+var_dump($jour[1]);
+echo "<hr/>";
+$jour = $_GET["mardi"];
 var_dump($jour[1]);
 
 
@@ -28,34 +36,33 @@ var_dump($jour[1]);
                 break;
             case 2:
                 $jour = $_GET["mercredi"];
-                $dispo = "2";
                 break;
             case 3:
                 $jour = $_GET["jeudi"];
-                $dispo = "3";
                 break;
             case 4:
                 $jour = $_GET["vendredi"];
-                $dispo = "4";
                 break;
             case 5:
                 $jour = $_GET["samedi"];
-                $dispo = "5";
                 break;
             case 6:
                 $jour = $_GET["dimanche"];
-                $dispo = "6";
                 break;
         }
+        //echo $jour;
 
 
-        foreach($jour as $valeur) {
-            //include 'connectAD.php';
-            echo "La checkbox $valeur a été cochée<br>";
-            /*$sql = "INSERT INTO disponibilite (matricule, hcreneau) VALUES (1, '".$valeur."');";
-		    $result = executeSQL($sql);*/
-        } 
-
+        // foreach($jour as $valeur) {
+        //     echo "$valeur gfgf";
+        //     echo "La checkbox $valeur de <br>";
+        //     /*$sql = "INSERT INTO disponibilite (matricule, hcreneau) VALUES (1, '".$valeur."');";
+		//     $result = executeSQL($sql);*/
+        // } 
+echo "<hr/>";
+        foreach ($_GET["lundi"] as $index => $value){
+            echo $index." :".$value."<br/>";
+         }
 
         $i++;
 
