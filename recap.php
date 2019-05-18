@@ -15,11 +15,11 @@ echo "<hr/>";
 
 
 echo "<br />";
-$jour = $_GET["lundi"];
-var_dump($jour[1]);
+$jours = $_GET["lundi"];
+var_dump($jours[0]);
 echo "<hr/>";
-$jour = $_GET["mardi"];
-var_dump($jour[1]);
+$jours = $_GET["mardi"];
+var_dump($jours[0]);
 
 
 
@@ -29,40 +29,55 @@ var_dump($jour[1]);
 
         switch ($i) {
             case 0:
-                $jour = $_GET["lundi"];
+                $jours = $_GET["lundi"];
                 break;
             case 1:
-                $jour = $_GET["mardi"];
+                $jours = $_GET["mardi"];
                 break;
             case 2:
-                $jour = $_GET["mercredi"];
+                $jours = $_GET["mercredi"];
                 break;
             case 3:
-                $jour = $_GET["jeudi"];
+                $jours = $_GET["jeudi"];
                 break;
             case 4:
-                $jour = $_GET["vendredi"];
+                $jours = $_GET["vendredi"];
                 break;
             case 5:
-                $jour = $_GET["samedi"];
+                $jours = $_GET["samedi"];
                 break;
             case 6:
-                $jour = $_GET["dimanche"];
+                $jours = $_GET["dimanche"];
                 break;
         }
-        //echo $jour;
+        //echo $jours;
 
 
-        // foreach($jour as $valeur) {
+        // foreach($jours as $valeur) {
         //     echo "$valeur gfgf";
         //     echo "La checkbox $valeur de <br>";
         //     /*$sql = "INSERT INTO disponibilite (matricule, hcreneau) VALUES (1, '".$valeur."');";
 		//     $result = executeSQL($sql);*/
-        // } 
+        // }
+        
+        foreach($jours as $cle1 => $valeur1)
+        {
+            echo "personne n :" . $cle1 . "<br />";
+
+                foreach ($valeur1 as $cle2=>$valeur2)
+
+                {
+                     echo "Clé : ".$cle2 .", Valeur: " . $valeur2 . "<br />\n";
+                }
+            }
+
+
+
+
 echo "<hr/>";
-        foreach ($_GET["lundi"] as $index => $value){
-            echo $index." :".$value."<br/>";
-         }
+        // foreach ($_GET["mercredi"] as $index => $value){
+        //     echo $index." :".$value."<br/>";
+        //  }
 
         $i++;
 
