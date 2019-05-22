@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+lundiYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -22,7 +22,7 @@
 	<div data-role="page">
 		<div data-role="header" data-position="fixed" data-theme="b">
 			<!-- data-theme="b" cf http://demos.jquerymobile.com/1.1.2/docs/api/themes.html -->
-			<h1>Saisie des disponibilités</h1>
+			<h1>Saisie des disponibilit&eacute;s</h1>
 		</div><!-- /header -->
 
 		<div data-role="content">
@@ -31,33 +31,123 @@
 					<div class="week" style="text-align:center">
 							
 							<?php 
-							include 'date.php';
-							echo "Semaine du ". $listeJours[0]->format('d/m/Y'). " au ". $listeJours[6]->format('d/m/Y')
-							?>
+              include 'date.php';
+              //include 'listepompier.php';
+							echo "Semaine du ". $listeJours[0]->format('d/m/Y'). " au ". $listeJours[6]->format('d/m/Y');
+              
+              ?>
 
 					</div>
 					<br/>
-					<div class="calendar">
-						<div class="calendar__header">
-							<div>Lundi</div>
-							<div>Mardi</div>
-							<div>Mercredi</div>
-							<div>Jeudi</div>
-							<div>Vendredi</div>
-							<div>Samedi</div>
-							<div>Dimanche</div>
-						</div>
-						<div class="calendar__week">
-							<!-- Affiche la date du jour de la case sur laquelle on double-click -->
-							<div class="calendar__day day" ondblclick="window.alert('<?php echo $listeJours[0]->format('d/m/Y') ?>');"></div>
-							<div class="calendar__day day" ondblclick="window.alert('<?php echo $listeJours[1]->format('d/m/Y') ?>');"></div>
-							<div class="calendar__day day" ondblclick="window.alert('<?php echo $listeJours[2]->format('d/m/Y') ?>');"></div>
-							<div class="calendar__day day" ondblclick="window.alert('<?php echo $listeJours[3]->format('d/m/Y') ?>');"></div>
-							<div class="calendar__day day" ondblclick="window.alert('<?php echo $listeJours[4]->format('d/m/Y') ?>');"></div>
-							<div class="calendar__day day" ondblclick="window.alert('<?php echo $listeJours[5]->format('d/m/Y') ?>');"></div>
-							<div class="calendar__day day" ondblclick="window.alert('<?php echo $listeJours[6]->format('d/m/Y') ?>');"></div>						
-						</div>
-					</div>
+          <form id="formulaire" action="insert.php" method="get" >
+                    <table data-role="table" id="tab" name="tab" data-mode="reflow" class="ui-responsive">
+                      <thead id="the">
+                        <tr>
+                          <th data-priority="0">Heure</th> 
+                          <th data-priority="1">Lundi</th>
+                          <th data-priority="2">Mardi</th>
+                          <th data-priority="3">Mercredi</th>
+                          <th data-priority="4">Jeudi</th>
+                          <th data-priority="5">Vendredi</th>
+                          <th data-priority="6">Samedi</th>
+                          <th data-priority="7">Dimanche</th>
+                    
+                        </tr>
+                      </thead>
+                      <tbody>
+
+                      <?php 
+
+                        $i = 0;
+
+                        while($i<8):
+
+                          switch ($i) {
+                            case 0:
+                                $heure = "00:01 / 03:00";
+                                $dispo = "1";
+                                break;
+                            case 1:
+                                $heure = "03:01 / 06:00";
+                                $dispo = "2";
+                                break;
+                            case 2:
+                                $heure = "06:01 / 09:00";
+                                $dispo = "3";
+                                break;
+                            case 3:
+                                $heure = "09:01 / 12:00";
+                                $dispo = "4";
+                                break;
+                            case 4:
+                                $heure = "12:01 / 15:00";
+                                $dispo = "5";
+                                break;
+                            case 5:
+                                $heure = "15:01 / 18:00";
+                                $dispo = "6";
+                                break;
+                            case 6:
+                                $heure = "18:01 / 21:00";
+                                $dispo = "7";
+                                break;
+                            case 7:
+                                $heure = "21:01 / 00:00";
+                                $dispo = "8";
+                                break;
+                        }
+
+                        $checked = null;
+                        // if($i == 1){
+                        //   $checked = "checked";
+                        // }
+
+                      ?>
+
+                        <tr>
+                          <th> <?php echo $heure; ?> </th>
+                          <td>
+                            <input type="checkbox" name="lundi[]" id="lundi[]" value="<?php echo $dispo; ?>" dte="<?php echo $listeJours[0]->format('Y/m/d') ?>" <?php echo $checked; ?>/>
+                          </td>
+                          <td >
+                            <input type="checkbox" name="mardi[]" id="mardi[]" value="<?php echo $dispo ?>" dte="<?php echo $listeJours[1]->format('Y/m/d') ?>" <?php echo $checked; ?>/>
+                          </td>
+                          <td>
+                            <input type="checkbox" name="mercredi[]" id="mercredi[]" value="<?php echo $dispo ?>" dte="<?php echo $listeJours[2]->format('Y/m/d') ?>" <?php echo $checked; ?>/>
+                          </td>
+                          <td>
+                            <input type="checkbox" name="jeudi[]" id="jeudi[]" value="<?php echo $dispo ?>" dte="<?php echo $listeJours[3]->format('Y/m/d') ?>" <?php echo $checked; ?>/>
+                          </td>
+                          <td>
+                            <input type="checkbox" name="vendredi[]" id="vendredi[]" value="<?php echo $dispo ?>" dte="<?php echo $listeJours[4]->format('Y/m/d') ?>" <?php echo $checked; ?>/>
+                          </td>
+                          <td>
+                            <input type="checkbox" name="samedi[]"  id="samedi[]" value="<?php echo $dispo ?>" dte="<?php echo $listeJours[5]->format('Y/m/d') ?>" <?php echo $checked; ?>/>
+                          </td>
+                          <td>
+                            <input type="checkbox" name="dimanche[]" id="dimanche[]" value="<?php echo $dispo ?>" dte="<?php echo $listeJours[6]->format('Y/m/d') ?>" <?php echo $checked; ?>/>
+                          </td>
+                        </tr>
+
+
+                      <?php
+                          $i++;
+                        endwhile
+
+                      ?>
+
+                      </tbody>
+                    </table>	
+                      <?php
+                        if (isset($_GET['message']))
+                          echo $_GET['message'];
+                        else
+                          echo "&nbsp;";
+                          include 'listepompier.php';
+                      ?>
+                  <input id="envoi" name="envoi" type="submit" value="Valider" title="" />
+
+            </form>	
 				</main>
 
 		<div data-role="footer" data-position="fixed">
@@ -66,6 +156,9 @@
 
 	</div><!-- /page -->
 
+    </div>
+   </div>
+   
 </body>
 
 </html>

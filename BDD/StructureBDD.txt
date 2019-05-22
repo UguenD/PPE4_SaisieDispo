@@ -1,0 +1,25 @@
+CREATE TABLE pompier
+(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	nom VARCHAR(30) NOT NULL,
+	prenom VARCHAR(30) NOT NULL,
+	ville VARCHAR(50),
+	adresse VARCHAR(50),
+	numTel VARCHAR(10)
+);
+
+CREATE TABLE creneau
+(
+	id INT PRIMARY KEY NOT NULL,
+	horaires VARCHAR(15) NOT NULL
+);
+
+CREATE TABLE dispo
+(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	idPompier INT NOT NULL,
+	idCreneau INT NOT NULL,
+	dateDispo DATE NOT NULL,
+	FOREIGN KEY(idPompier) REFERENCES pompier(id),
+	FOREIGN KEY(idCreneau) REFERENCES creneau(id)
+);
