@@ -1,0 +1,33 @@
+-- Table POMPIER
+INSERT INTO pompier(nom, prenom, ville, adresse)
+VALUES('UGUEN', 'Donovan', 'Brest', '95 rue St-Marc');
+
+INSERT INTO pompier(nom, prenom)
+VALUES('LE YONCOUR', 'Melvyn');
+
+-- Table CRENEAU
+INSERT INTO creneau(id, horaires)
+VALUES(1, '00:01 / 03:00');
+
+INSERT INTO creneau(id, horaires)
+VALUES(2, '03:01 / 06:00');
+
+INSERT INTO creneau(id, horaires)
+VALUES(3, '06:01 / 09:00');
+
+INSERT INTO creneau(id, horaires)
+VALUES(4, '09:01 / 12:00');
+
+INSERT INTO creneau(id, horaires)
+VALUES(5, '12:01 / 15:00');
+
+INSERT INTO creneau(id, horaires)
+VALUES(6, '15:01 / 18:00');
+
+INSERT INTO creneau(id, horaires)
+VALUES(7, '18:01 / 21:00');
+
+INSERT INTO creneau(id, horaires)
+VALUES(8, '21:01 / 00:00');
+
+-- Table DISPO
