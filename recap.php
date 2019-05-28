@@ -53,20 +53,16 @@ var_dump($jour[1]);
         //echo $jour;
 
 
-        // foreach($jour as $valeur) {
-        //     echo "$valeur gfgf";
-        //     echo "La checkbox $valeur de <br>";
-        //     /*$sql = "INSERT INTO disponibilite (matricule, hcreneau) VALUES (1, '".$valeur."');";
-		//     $result = executeSQL($sql);*/
+        foreach($jour as $valeur) {
+            echo "$valeur gfgf";
+            echo "La checkbox $valeur de <br>";
+            /*$sql = "INSERT INTO disponibilite (matricule, hcreneau) VALUES (1, '".$valeur."');";
+		    $result = executeSQL($sql);*/
         // } 
-echo "<hr/>";
-        foreach ($_GET["lundi"] as $index => $value){
-            echo $index." :".$value."<br/>";
-         }
-
+        echo "<hr/>";
         $i++;
-
-   }
+        }
+    }
 
 
    /* if(isset($_POST['envoi'])){ // si formulaire soumis
